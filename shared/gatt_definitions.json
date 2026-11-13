@@ -1,0 +1,116 @@
+{
+  "protocol": "Canevyn-BLE-GATT",
+  "version": "1.0.0",
+  "services": {
+    "canevyn_primary_service": {
+      "uuid": "0000c001-0000-1000-8000-00805f9b34fb",
+      "name": "Canevyn Primary Assistive Service",
+      "description": "Primary service managing smart stick hardware telemetry, SOS events, sensor streams and haptic control",
+      "characteristics": {
+        "sos_event": {
+          "uuid": "0000c002-0000-1000-8000-00805f9b34fb",
+          "name": "Hardware SOS Event",
+          "properties": ["read", "notify", "indicate", "write"],
+          "description": "Indicates physical Canevyn latch trigger state. Write 0x00 to resolve alert.",
+          "payload_format": {
+            "type": "binary_packed",
+            "bytes": 6,
+            "fields": [
+              {"name": "status", "type": "uint8", "description": "0x00=Nominal, 0x01=Active Physical SOS Latch, 0x02=Fall Impact Confirmed"},
+              {"name": "timestamp_epoch_sec", "type": "uint32", "endian": "little"},
+              {"name": "tilt_degrees", "type": "uint8", "description": "Angle of cane at trigger (0-180)"}
+            ]
+          }
+        },
+        "telemetry_stream": {
+          "uuid": "0000c003-0000-1000-8000-00805f9b34fb",
+          "name": "Stick Telemetry Stream",
+          "properties": ["read", "notify"],
+          "description": "Periodic real-time telemetry from smart stick sensors (LiDAR, ultrasonic, orientation, beacon)",
+          "payload_format": {
+            "type": "binary_packed",
+            "bytes": 12,
+            "fields": [
+              {"name": "obstacle_distance_cm", "type": "uint16", "endian": "little"},
+              {"name": "obstacle_angle_deg", "type": "int8", "description": "-45 to +45 deg forward beam"},
+              {"name": "ground_tactile_profile", "type": "uint8", "description": "0=Smooth, 1=Paved, 2=Tactile Pavers, 3=Obstruction/Curbs"},
+              {"name": "imu_pitch", "type": "int8"},
+              {"name": "imu_roll", "type": "int8"},
+              {"name": "imu_yaw", "type": "int8"},
+              {"name": "tip_impact_detected", "type": "uint8"},
+              {"name": "beeper_active", "type": "uint8"},
+              {"name": "haptic_state", "type": "uint8"}
+            ]
+          }
+        },
+        "device_status": {
+          "uuid": "0000c004-0000-1000-8000-00805f9b34fb",
+          "name": "Device System Status",
+          "properties": ["read", "notify"],
+          "description": "Smart stick subsystem health, firmware versions, cellular mesh and errors",
+          "payload_format": {
+            "type": "binary_packed",
+            "bytes": 8,
+            "fields": [
+              {"name": "system_state", "type": "uint8", "description": "0=Nominal, 1=Degraded Sensor, 2=Emergency Mode, 3=Charging"},
+              {"name": "cellular_signal_bars", "type": "uint8", "description": "0-5 bars (LTE band 12 priority)"},
+              {"name": "satellite_fix_quality", "type": "uint8", "description": "0=None, 1=GPS 2D, 2=GPS 3D, 3=RTK Differential"},
+              {"name": "temperature_celsius", "type": "int8"},
+              {"name": "error_flags", "type": "uint16", "endian": "little"}
+            ]
+          }
+        },
+        "haptic_and_audio_control": {
+          "uuid": "0000c005-0000-1000-8000-00805f9b34fb",
+          "name": "Haptic & Audio Actuator Control",
+          "properties": ["write", "writeWithoutResponse"],
+          "description": "Send command pulses from user phone to cane grip haptics or locator beacon tone",
+          "payload_format": {
+            "type": "binary_packed",
+            "bytes": 4,
+            "fields": [
+              {"name": "command_id", "type": "uint8", "description": "0x01=Locator Ping, 0x02=Haptic Pulse, 0x03=Stop Alert Beacon"},
+              {"name": "intensity", "type": "uint8", "description": "0-100%"},
+              {"name": "duration_ms", "type": "uint16", "endian": "little"}
+            ]
+          }
+        }
+      }
+    },
+    "battery_service": {
+      "uuid": "0000180f-0000-1000-8000-00805f9b34fb",
+      "name": "Standard Bluetooth Battery Service",
+      "characteristics": {
+        "battery_level": {
+          "uuid": "00002a19-0000-1000-8000-00805f9b34fb",
+          "name": "Battery Level Percentage",
+          "properties": ["read", "notify"],
+          "format": "uint8 (0-100%)"
+        }
+      }
+    },
+    "location_and_navigation_service": {
+      "uuid": "00001819-0000-1000-8000-00805f9b34fb",
+      "name": "Location and Navigation Service",
+      "characteristics": {
+        "location_data": {
+          "uuid": "00002a67-0000-1000-8000-00805f9b34fb",
+          "name": "Stick GPS / RTK Coordinates",
+          "properties": ["read", "notify"],
+          "description": "Stick hardware GPS coordinates broadcast to phone",
+          "format": "latitude (int32 / 1e7), longitude (int32 / 1e7), altitude (int24), accuracy_cm (uint16)"
+        }
+      }
+    },
+    "device_information_service": {
+      "uuid": "0000180a-0000-1000-8000-00805f9b34fb",
+      "name": "Device Information Service",
+      "characteristics": {
+        "manufacturer_name": {"uuid": "00002a29-0000-1000-8000-00805f9b34fb", "value": "Canevyn Technologies"},
+        "model_number": {"uuid": "00002a24-0000-1000-8000-00805f9b34fb", "value": "CX-7 Sentinel"},
+        "serial_number": {"uuid": "00002a25-0000-1000-8000-00805f9b34fb", "value": "CNV-9942"},
+        "firmware_revision": {"uuid": "00002a26-0000-1000-8000-00805f9b34fb", "value": "v4.1.0"}
+      }
+    }
+  }
+}

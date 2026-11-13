@@ -1,0 +1,314 @@
+/* Canevyn Sentinel Design System Tokens & Base Theme */
+:root {
+  --color-surface: #04091a;
+  --color-surface-dim: #04091a;
+  --color-surface-bright: #1c2b54;
+  --color-surface-container-lowest: #030818;
+  --color-surface-container-low: #08122c;
+  --color-surface-container: #0e1a3c;
+  --color-surface-container-high: #182854;
+  --color-surface-container-highest: #23366a;
+  
+  --color-on-surface: #dbe1ff;
+  --color-on-surface-variant: #d5c4ac;
+  --color-outline: #9e8f78;
+  --color-outline-variant: #514532;
+  
+  --color-primary: #ffdba0;
+  --color-on-primary: #422c00;
+  --color-primary-container: #ffb703;
+  --color-on-primary-container: #6b4b00;
+  
+  --color-secondary: #40efb7;
+  --color-on-secondary: #003827;
+  --color-secondary-container: #00d29c;
+  --color-on-secondary-container: #00543d;
+  
+  --color-error: #ffb4ab;
+  --color-on-error: #690005;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+
+  --font-family-base: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-surface);
+  background-image: linear-gradient(to bottom, rgba(4, 9, 26, 0.75), rgba(4, 9, 26, 0.45)), url('/static/assets/images/tech-space-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--color-on-surface);
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  line-height: 26px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+body.role-welcome {
+  background-image: linear-gradient(to bottom, rgba(4, 9, 26, 0.75), rgba(4, 9, 26, 0.45)), url('/static/assets/images/tech-space-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body.role-user {
+  background-image: linear-gradient(to bottom, rgba(4, 9, 26, 0.82), rgba(4, 9, 26, 0.68)), url('/static/assets/images/canevyn-user-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body.role-guardian {
+  background-image: linear-gradient(to bottom, rgba(4, 9, 26, 0.82), rgba(4, 9, 26, 0.68)), url('/static/assets/images/authorized-member-bg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Premium Canevyn Glassmorphic Card Styles */
+.glass-panel {
+  background-color: rgba(10, 20, 48, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(64, 239, 183, 0.22);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.glass-panel-interactive {
+  background-color: rgba(10, 20, 48, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(64, 239, 183, 0.25);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.glass-panel-interactive:hover,
+.glass-panel-interactive:focus-visible {
+  border-color: rgba(64, 239, 183, 0.7);
+  box-shadow: 0 12px 36px rgba(0, 210, 156, 0.22);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.glass-panel-interactive:active {
+  transform: translateY(0) scale(0.99);
+}
+
+/* Touch Target Minimum Integrity (56px) */
+button, a, input, select, [role="button"] {
+  min-height: 56px;
+  box-sizing: border-box;
+}
+
+/* High Contrast Focus Ring */
+button:focus-visible, input:focus-visible, a:focus-visible {
+  outline: 3px solid #ffb703 !important;
+  outline-offset: 3px !important;
+}
+
+
+.tactile-card {
+  background-color: var(--color-surface-container);
+  border: 2px solid #1C2541;
+  border-radius: 0.75rem;
+}
+
+.tactile-card-interactive {
+  background-color: var(--color-surface-container);
+  border: 2px solid #243254;
+  border-radius: 0.75rem;
+  transition: border-color 0.15s ease, transform 0.1s ease;
+}
+
+.tactile-card-interactive:focus-visible,
+.tactile-card-interactive:active {
+  border-color: var(--color-primary-container);
+  outline: none;
+}
+
+
+.emergency-pulse {
+  animation: emergencyBorderPulse 1.8s infinite;
+}
+
+@keyframes emergencyBorderPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 71, 111, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(239, 71, 111, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 71, 111, 0);
+  }
+}
+
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(64, 239, 183, 0.25);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(64, 239, 183, 0.5);
+}
+
+/* =========================================================
+   Authorized Member Light Mode (Strictly Scoped to Guardian)
+   ========================================================= */
+body.role-guardian.guardian-theme-light {
+  background-color: #f4f7fb !important;
+  background-image: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%) !important;
+  color: #0f172a !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-surface,
+body.role-guardian.guardian-theme-light .bg-surface\/85,
+body.role-guardian.guardian-theme-light .bg-surface\/80 {
+  background-color: #f4f7fb !important;
+}
+
+body.role-guardian.guardian-theme-light header.bg-surface\/85 {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  border-bottom: 1px solid #cbd5e1 !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-surface-container-lowest,
+body.role-guardian.guardian-theme-light .bg-surface-container-lowest\/95,
+body.role-guardian.guardian-theme-light .bg-surface-container-lowest\/90,
+body.role-guardian.guardian-theme-light .bg-surface-container-lowest\/80 {
+  background-color: rgba(255, 255, 255, 0.96) !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-surface-container-low {
+  background-color: #f8fafc !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-surface-container,
+body.role-guardian.guardian-theme-light .bg-surface-container\/60,
+body.role-guardian.guardian-theme-light .bg-surface-container\/70 {
+  background-color: #ffffff !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-surface-container-high,
+body.role-guardian.guardian-theme-light .bg-surface-container-high\/60 {
+  background-color: #e9eff6 !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-surface-container-highest,
+body.role-guardian.guardian-theme-light .bg-surface-container-highest\/50 {
+  background-color: #dbe4ef !important;
+}
+
+body.role-guardian.guardian-theme-light .glass-panel {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08) !important;
+}
+
+body.role-guardian.guardian-theme-light .glass-panel-interactive:hover {
+  background-color: #f8fafc !important;
+  border-color: #047857 !important;
+}
+
+body.role-guardian.guardian-theme-light .text-on-surface,
+body.role-guardian.guardian-theme-light .text-on-background {
+  color: #0f172a !important;
+}
+
+body.role-guardian.guardian-theme-light .text-on-surface-variant {
+  color: #475569 !important;
+}
+
+body.role-guardian.guardian-theme-light .text-secondary {
+  color: #047857 !important;
+}
+
+body.role-guardian.guardian-theme-light .text-primary,
+body.role-guardian.guardian-theme-light .text-primary-container {
+  color: #b45309 !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-secondary {
+  background-color: #047857 !important;
+}
+
+body.role-guardian.guardian-theme-light .text-surface,
+body.role-guardian.guardian-theme-light .text-on-secondary {
+  color: #ffffff !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-secondary\/15,
+body.role-guardian.guardian-theme-light .bg-secondary\/20 {
+  background-color: rgba(4, 120, 87, 0.12) !important;
+}
+
+body.role-guardian.guardian-theme-light .border-surface-container-high,
+body.role-guardian.guardian-theme-light .border-surface-container-highest {
+  border-color: #cbd5e1 !important;
+}
+
+body.role-guardian.guardian-theme-light .border-secondary\/30,
+body.role-guardian.guardian-theme-light .border-secondary\/40 {
+  border-color: rgba(4, 120, 87, 0.35) !important;
+}
+
+body.role-guardian.guardian-theme-light .text-error {
+  color: #b91c1c !important;
+}
+
+body.role-guardian.guardian-theme-light .bg-error-container {
+  background-color: #fee2e2 !important;
+}
+
+body.role-guardian.guardian-theme-light .text-on-error-container {
+  color: #7f1d1d !important;
+}
+
+body.role-guardian.guardian-theme-light input,
+body.role-guardian.guardian-theme-light select,
+body.role-guardian.guardian-theme-light textarea {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+
+body.role-guardian.guardian-theme-light input::placeholder {
+  color: #64748b !important;
+}
+
+body.role-guardian.guardian-theme-light *:focus-visible {
+  outline: 3px solid #047857;
+  outline-offset: 2px;
+}
+
+body.role-guardian.guardian-theme-light .leaflet-container {
+  border: 1px solid #cbd5e1;
+}

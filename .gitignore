@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+
+*.db
+*.sqlite
+*.sqlite3
+*.db.backup*
+*.backup*
+
+venv/
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+database_export/
+scratch/

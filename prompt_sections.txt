@@ -1,0 +1,116 @@
+<USER_REQUEST>
+# MASTER PROMPT – FINAL REPORT CORRECTIONS AND COVER PAGE REDESIGN
+
+I have an existing 14-page Engineering Mathematics III report. I want you to refine the existing report, correct the mathematical content, improve the fonts and redesign the first page.
+
+IMPORTANT: Do not create a completely new report. Preserve the existing report's content, mathematical explanations, relevant diagrams, images and 14-page structure. Make the specific improvements mentioned below.
+
+Use the uploaded Zeal College logo image as the official college logo and background watermark on the first page.
+
+--------------------------------------------------
+1. REPORT DETAILS
+--------------------------------------------------
+
+College: Zeal College of Engineering & Research
+
+Department: Electronics and Computer Engineering
+
+Subject: Engineering Mathematics III
+
+Activity: CIE-2 Activity 3 & 4
+
+Class: SY ECE
+
+Division: Div-A
+
+Unit Name: LAPLACE TRANSFORM
+
+Report Topic: ROBOTIC ARM MOVEMENT
+
+Guide: Prof. Tejaswini Pawar
+
+Academic Year: 2026–27
+
+--------------------------------------------------
+2. GROUP MEMBERS – EXACT DETAILS
+--------------------------------------------------
+
+Display all six students on the first page:
+
+1. Rutvij Kotwal – EC2149
+2. Piyush Salgude – EC2150
+3. Trisha Moolya – EC2151
+4. Saurabh Singh – EC2152
+5. Radhika Sarnagire – EC2153
+6. Bhumika Kale – EC2154
+
+STRICT INSTRUCTIONS:
+
+- Display all six names and roll numbers correctly.
+- Do not include ZPRN numbers.
+- Do not highlight Trisha Moolya.
+- Do not write Team Leader.
+- Give all six students equal font size, weight and formatting.
+- Do not change the spelling of any name or roll number.
+
+--------------------------------------------------
+3. FIRST PAGE – COVER PAGE REDESIGN
+--------------------------------------------------
+
+Redesign the first page to look like a professional engineering college activity report.
+
+Use the uploaded Zeal College logo as the actual background waterm
+<truncated 6596 bytes>
+ed use of images and diagrams.
+
+Do not unnecessarily rewrite or remove existing content.
+
+--------------------------------------------------
+11. FINAL QUALITY CHECK
+--------------------------------------------------
+
+Before exporting, verify:
+
+1. Correct college name and department.
+2. Activities 3 & 4 are displayed.
+3. Unit name is Laplace Transform.
+4. Report topic is Robotic Arm Movement.
+5. Guide name is Prof. Tejaswini Pawar.
+6. All six student names and roll numbers are correct.
+7. No ZPRN numbers are included.
+8. No student is highlighted.
+9. Team Leader is not mentioned.
+10. Uploaded college logo is used as the first-page watermark.
+11. Page 9 mathematical correction is completed.
+12. Page 10 Final Value Theorem condition is included.
+13. DC motor model assumptions are clarified.
+14. Fonts look professional and consistent.
+15. All mathematical equations are readable and accurate.
+16. Page borders are consistent.
+17. Images and diagrams are properly aligned.
+18. Table of contents and page numbers are correct.
+
+--------------------------------------------------
+12. FINAL OUTPUT
+--------------------------------------------------
+
+Export the final corrected report in:
+
+1. PDF format.
+2. Editable Microsoft Word (.docx) format.
+
+The final document must be a polished, professional SY B.Tech Engineering Mathematics III report suitable for college submission.
+
+MOST IMPORTANT:
+
+Prioritize the first-page design, the uploaded Zeal College watermark, mathematical accuracy and professional typography.
+
+Do not create a new report from scratch. Refine the existing report while preserving its original structure and useful content.
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-10-30T23:40:30+05:30.
+
+The user has uploaded 1 image(s):
+- C:/Users/Thrisha/.gemini/antigravity/brain/a20b5287-2ad9-4a6d-9bc5-5f564d65d6fb/.user_uploaded/media_1793383785244_1103b316.png
+You can embed this image in an artifact if you need the USER to review it.
+</ADDITIONAL_METADATA>

@@ -1,0 +1,355 @@
+<!DOCTYPE html><html class="dark" lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24..48,400..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#08122d;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#ffdad6", "on-surface-variant": "#d5c4ac", "on-primary-fixed-variant": "#5e4100", "tertiary": "#ffd6da", "outline-variant": "#514532", "surface-dim": "#08122d", "on-secondary-fixed-variant": "#00513b", "secondary-fixed": "#54fdc4", "surface-container-highest": "#2b3450", "on-error": "#690005", "inverse-primary": "#7d5800", "secondary-fixed-dim": "#27e0a9", "surface-bright": "#2f3855", "on-secondary": "#003827", "secondary-container": "#00d29c", "primary-fixed": "#ffdea9", "error-container": "#93000a", "on-background": "#dbe1ff", "tertiary-fixed-dim": "#ffb2bc", "secondary": "#40efb7", "on-tertiary": "#670023", "surface-container-lowest": "#030c28", "surface-container-low": "#111a36", "on-primary-container": "#6b4b00", "inverse-surface": "#dbe1ff", "surface-variant": "#2b3450", "on-surface": "#dbe1ff", "surface-container-high": "#202945", "on-primary": "#422c00", "surface": "#08122d", "error": "#ffb4ab", "surface-container": "#151e3a", "on-tertiary-fixed-variant": "#910034", "on-tertiary-container": "#a3003c", "tertiary-container": "#ffaeb9", "on-primary-fixed": "#271900", "background": "#08122d", "primary-fixed-dim": "#ffba27", "outline": "#9e8f78", "on-secondary-fixed": "#002116", "tertiary-fixed": "#ffd9dd", "on-secondary-container": "#00543d", "inverse-on-surface": "#262f4c", "primary-container": "#ffb703", "primary": "#ffdba0", "surface-tint": "#ffba27", "on-tertiary-fixed": "#400013" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.5rem", "margin-tablet": "2rem", "space-lg": "1.75rem", "margin": "1.25rem", "space-xl": "2.5rem", "space-md": "1.25rem", "gutter": "1rem", "gutter-tablet": "1.5rem", "space-sm": "0.75rem" }, fontFamily: { "headline-xl-mobile": ["Atkinson Hyperlegible Next"], "label-md": ["Atkinson Hyperlegible Next"], "headline-lg": ["Atkinson Hyperlegible Next"], "body-lg": ["Atkinson Hyperlegible Next"], "label-lg": ["Atkinson Hyperlegible Next"], "headline-md": ["Atkinson Hyperlegible Next"], "body-md": ["Atkinson Hyperlegible Next"], "headline-lg-mobile": ["Atkinson Hyperlegible Next"], "headline-xl": ["Atkinson Hyperlegible Next"], "telemetry-num": ["Atkinson Hyperlegible Next"], "body-xl": ["Atkinson Hyperlegible Next"] }, fontSize: { "headline-xl-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "800" }], "label-md": ["16px", { lineHeight: "22px", letterSpacing: "0.04em", fontWeight: "700" }], "headline-lg": ["30px", { lineHeight: "38px", fontWeight: "700" }], "body-lg": ["20px", { lineHeight: "28px", fontWeight: "500" }], "label-lg": ["18px", { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "700" }], "headline-md": ["24px", { lineHeight: "32px", fontWeight: "700" }], "body-md": ["18px", { lineHeight: "26px", fontWeight: "400" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", fontWeight: "700" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "800" }], "telemetry-num": ["36px", { lineHeight: "40px", letterSpacing: "-0.01em", fontWeight: "800" }], "body-xl": ["22px", { lineHeight: "32px", fontWeight: "400" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen flex flex-col"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.3)]"><div class="h-20 px-4 flex items-center justify-between gap-2"><div class="flex items-center gap-2"><img alt="Canevyn Official Logo" class="w-8 h-8 rounded-full shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCaEYtfyCb7wiKNbeBgIyu5ej-O0TMNxN-wOkcJdTKXjpg2OBqMwfVSCwF6VJ_zsxfSy7ozHZ7Lx5x1Gr77y3P6KbqMORBP_A8Mpu19hAYlg5ctTT8lte6ESjI5qbed8JYEnIk4CeYXDF6_TAkOv7PaGF5YR8btGqtSkVE28bIvtL9xEgT0We_aSFkZi-HlVbqoW4h0Awrbn_n7TtShNpqIxx8YnnElroPJ-9R7UVdkY9Q4yer9cpAZJcjJN8Qo87oAw"><span class="font-headline-md text-headline-md text-primary tracking-tight font-bold">Canevyn</span></div><div class="flex items-center gap-1.5"><div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-secondary"><span class="material-symbols-outlined text-[16px]">bluetooth_connected</span><span class="font-label-md text-label-md font-bold">82%</span></div><button aria-label="Audio Announcement Toggle" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-container-high text-on-surface hover:bg-surface-container-highest"><span class="material-symbols-outlined text-[22px]">volume_up</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-28 bg-surface"><div class="flex flex-col w-full px-4 space-y-5 pb-6">
+<!-- Voice Header & Status bar -->
+<div class="w-full flex items-center justify-between rounded-xl bg-surface-container-high px-4 py-3 shadow-md">
+<button aria-label="Dismiss Voice Assistant" class="min-h-[56px] min-w-[56px] flex items-center justify-center rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface focus:outline-none focus:bg-primary-container focus:text-on-primary" id="closeAssistantBtn">
+<span class="material-symbols-outlined text-[28px]">arrow_back</span>
+</button>
+<div class="flex flex-col items-center text-center">
+<span class="font-headline-md text-headline-md text-primary font-bold">Voice Assistant</span>
+<span class="font-label-md text-label-md text-secondary flex items-center gap-1.5">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+        Spatial Audio Enabled
+      </span>
+</div>
+<div aria-label="Speech Output Level 85%" class="min-h-[56px] px-3 flex items-center gap-1.5 rounded-lg bg-surface-container text-primary-container">
+<span class="material-symbols-outlined text-[24px]">volume_up</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">85%</span>
+</div>
+</div>
+<!-- State Simulation Selector -->
+<div class="w-full flex flex-col space-y-2 rounded-xl bg-surface-container-low p-3 shadow-sm">
+<label class="font-label-md text-label-md text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary">touch_app</span>
+      Interaction Stage Demo
+    </label>
+<div class="grid grid-cols-2 gap-2" role="tablist">
+<button class="state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-surface-container-high text-on-surface focus:outline-none" id="btnStateReady" onclick="setVoiceState('ready')">
+        1. Ready to Listen
+      </button>
+<button class="state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-surface-container-high text-on-surface focus:outline-none" id="btnStateListening" onclick="setVoiceState('listening')">
+        2. Listening...
+      </button>
+<button class="state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-surface-container-high text-on-surface focus:outline-none" id="btnStateProcessing" onclick="setVoiceState('processing')">
+        3. Processing
+      </button>
+<button class="state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-primary-container text-on-primary-container shadow-md focus:outline-none" id="btnStateSpeaking" onclick="setVoiceState('speaking')">
+        4. Speaking Response
+      </button>
+</div>
+</div>
+<!-- Dynamic Voice Orb & Audio Waveform Visualizer -->
+<div class="w-full relative flex flex-col items-center justify-center p-8 rounded-xl bg-surface-container-lowest overflow-hidden shadow-inner min-h-[260px]">
+<!-- Ambient back-glow ripples -->
+<div class="absolute w-56 h-56 rounded-full bg-primary-container/10 blur-xl transition-transform duration-700" id="orbRingOuter" style="transform: scale(1.3);"></div>
+<div class="absolute w-44 h-44 rounded-full bg-secondary/15 blur-lg transition-transform duration-500" id="orbRingMid" style="transform: scale(1.25);"></div>
+<!-- Central SVG Pulsing Orb & Dynamic Waveform -->
+<div class="relative z-10 flex flex-col items-center justify-center">
+<svg aria-hidden="true" class="w-36 h-36" fill="none" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+<circle class="text-primary/20" cx="80" cy="80" id="orbWaveBase" r="70" stroke="currentColor" stroke-dasharray="6 6" stroke-width="3"></circle>
+<circle class="text-surface-container-highest transition-colors duration-300" cx="80" cy="80" fill="currentColor" id="orbCoreGlow" r="50"></circle>
+<!-- Frequency bars / acoustic signature -->
+<g class="transform -translate-y-1" id="waveBars">
+<line class="text-secondary" stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="50" x2="50" y1="50.47422922633799" y2="109.525770773662"></line>
+<line class="text-primary" stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="62" x2="62" y1="64.19259613825848" y2="95.80740386174152"></line>
+<line class="text-primary-container" stroke="currentColor" stroke-linecap="round" stroke-width="5" x1="74" x2="74" y1="58.91094584502352" y2="101.08905415497648"></line>
+<line class="text-secondary" stroke="currentColor" stroke-linecap="round" stroke-width="5" x1="86" x2="86" y1="50.04850385512498" y2="109.95149614487502"></line>
+<line class="text-primary" stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="98" x2="98" y1="61.368166186313374" y2="98.63183381368663"></line>
+<line class="text-secondary" stroke="currentColor" stroke-linecap="round" stroke-width="4" x1="110" x2="110" y1="61.537312505408465" y2="98.46268749459153"></line>
+</g>
+<!-- Dynamic Center Icon -->
+<circle class="text-surface-container-high" cx="80" cy="80" fill="currentColor" r="28"></circle>
+</svg>
+<span class="material-symbols-outlined absolute text-[32px] text-primary select-none pointer-events-none" id="centerIcon">graphic_eq</span>
+</div>
+<!-- Live Status Pill Label -->
+<div class="relative z-10 mt-5 px-4 py-2 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-2" id="orbStateBadge">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container" id="orbStateDot"></span>
+<span id="orbStateText" class="">Assistant Speaking Feedback</span>
+</div>
+</div>
+<!-- Live Transcribed Dialogue Cards -->
+<div class="space-y-4">
+<!-- User Speech Card -->
+<div class="w-full rounded-xl bg-surface-container p-4 shadow-sm" id="userSpeechBubble">
+<div class="flex items-center gap-2 mb-1.5">
+<span class="w-8 h-8 rounded-full bg-surface-bright flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">You Asked</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold pl-10" id="userTranscriptText">
+        “Where am I right now and is my Canevyn connected?”
+      </p>
+</div>
+<!-- Canevyn Spoken Response Card -->
+<div class="w-full rounded-xl bg-surface-container-high p-4 space-y-4 shadow-md" id="canevynResponseCard">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary font-bold">Canevyn Audio</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+          Nominal
+        </span>
+</div>
+<!-- Spoken response narrative -->
+<div class="rounded-lg bg-surface-container-lowest p-3.5">
+<p class="font-body-xl text-body-xl text-on-background font-normal leading-relaxed" id="canevynSpokenText">
+          “You are currently at the corner of Market Street and 4th Street, facing east. Your Canevyn stick is connected with 82% battery and the obstacle sensor is fully active.”
+        </p>
+</div>
+<!-- Key Insights Summary Badges -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<div class="rounded-lg bg-surface-container p-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">pin_drop</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface-variant text-xs truncate">Location</p>
+<p class="font-body-md text-body-md text-on-surface font-bold truncate">Market &amp; 4th St</p>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container p-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">battery_charging_80</span>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface-variant text-xs truncate">Telemetry</p>
+<p class="font-body-md text-body-md text-on-surface font-bold truncate">Stick 82% Active</p>
+</div>
+</div>
+</div>
+<!-- High Contrast Accessible Audio Replay Button -->
+<button aria-label="Replay current voice response in clear audio" class="w-full min-h-[64px] rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface flex items-center justify-center gap-3 px-4 shadow focus:outline-none focus:bg-primary focus:text-on-primary" id="replaySpeechBtn">
+<span class="material-symbols-outlined text-[28px] text-primary-container">replay</span>
+<span class="font-label-lg text-label-lg font-bold">Re-play Voice Response</span>
+</button>
+</div>
+</div>
+<!-- Quick Verbal Prompt Chips -->
+<div class="space-y-2.5">
+<div class="flex items-center justify-between">
+<h3 class="font-label-lg text-label-lg text-on-surface-variant font-bold">Quick Verbal Prompts</h3>
+<span class="font-label-md text-label-md text-secondary">Tap or Speak</span>
+</div>
+<div class="flex flex-col space-y-2">
+<button class="w-full min-h-[56px] text-left px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-between shadow-sm focus:outline-none focus:bg-surface-container-highest" onclick="insertPrompt('Where am I?')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-primary">my_location</span>
+<span class="font-label-lg text-label-lg font-bold">“Where am I?”</span>
+</div>
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">arrow_forward</span>
+</button>
+<button class="w-full min-h-[56px] text-left px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-between shadow-sm focus:outline-none focus:bg-surface-container-highest" onclick="insertPrompt('What is my battery level?')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-secondary">battery_full</span>
+<span class="font-label-lg text-label-lg font-bold">“What is my battery?”</span>
+</div>
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">arrow_forward</span>
+</button>
+<button class="w-full min-h-[56px] text-left px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-between shadow-sm focus:outline-none focus:bg-surface-container-highest" onclick="insertPrompt('Is my Canevyn connected?')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-primary-container">bluetooth</span>
+<span class="font-label-lg text-label-lg font-bold">“Is my Canevyn connected?”</span>
+</div>
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">arrow_forward</span>
+</button>
+<button class="w-full min-h-[56px] text-left px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-between shadow-sm focus:outline-none focus:bg-surface-container-highest" onclick="insertPrompt('Share location with Marcus')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-tertiary">share_location</span>
+<span class="font-label-lg text-label-lg font-bold">“Share location with Marcus”</span>
+</div>
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">arrow_forward</span>
+</button>
+<button class="w-full min-h-[56px] text-left px-4 rounded-xl bg-surface-container-high hover:bg-surface-bright text-on-surface flex items-center justify-between shadow-sm focus:outline-none focus:bg-surface-container-highest" onclick="insertPrompt('Check path obstacles')">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[24px] text-secondary">radar</span>
+<span class="font-label-lg text-label-lg font-bold">“Check path obstacles”</span>
+</div>
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Fallback / Soft retry alert banner -->
+<div class="w-full rounded-xl bg-surface-container-low p-4 flex items-center gap-3.5 shadow-sm" id="fallbackNotice">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest text-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">info</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-label-md text-on-surface font-bold">Didn't catch that?</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Tap once below or hold the Canevyn grip button to speak clearly.</p>
+</div>
+<button aria-label="Dismiss message" class="min-h-[56px] min-w-[56px] flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleFallbackDismiss()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Primary Voice Interaction Trigger Button (72px Accessible) -->
+<div class="w-full pt-1">
+<button aria-label="Hold or tap to speak instructions to Canevyn" class="w-full min-h-[72px] rounded-xl bg-primary-container hover:bg-primary-fixed text-on-primary-container flex items-center justify-between px-6 shadow-xl transition-transform active:scale-[0.98] focus:outline-none" id="primaryPushToTalk">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[34px]">mic</span>
+<div class="text-left">
+<span class="font-headline-md text-headline-md font-bold block leading-tight">Hold or Tap to Speak</span>
+<span class="font-label-md text-label-md opacity-90 block">Or trigger via cane grip button</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[32px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  let waveAnimationInterval = null;
+
+  function setVoiceState(state) {
+    // Reset tabs
+    document.querySelectorAll('.state-btn').forEach(btn => {
+      btn.className = 'state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-surface-container-high text-on-surface focus:outline-none';
+    });
+
+    const orbRingOuter = document.getElementById('orbRingOuter');
+    const orbRingMid = document.getElementById('orbRingMid');
+    const orbCore = document.getElementById('orbCoreGlow');
+    const centerIcon = document.getElementById('centerIcon');
+    const badge = document.getElementById('orbStateBadge');
+    const dot = document.getElementById('orbStateDot');
+    const badgeText = document.getElementById('orbStateText');
+    const pushBtn = document.getElementById('primaryPushToTalk');
+
+    clearInterval(waveAnimationInterval);
+
+    if (state === 'ready') {
+      document.getElementById('btnStateReady').className = 'state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-primary-container text-on-primary-container shadow-md focus:outline-none';
+      orbRingOuter.style.transform = 'scale(0.85)';
+      orbRingMid.style.transform = 'scale(0.9)';
+      orbCore.className = 'text-surface-container-high transition-colors duration-300';
+      centerIcon.textContent = 'mic_none';
+      centerIcon.className = 'material-symbols-outlined absolute text-[32px] text-on-surface-variant select-none pointer-events-none';
+      badgeText.textContent = 'Listening ready. Say "Canevyn"';
+      dot.className = 'w-2.5 h-2.5 rounded-full bg-on-surface-variant';
+      badge.className = 'relative z-10 mt-5 px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md flex items-center gap-2';
+      resetBars(10);
+    } else if (state === 'listening') {
+      document.getElementById('btnStateListening').className = 'state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-primary-container text-on-primary-container shadow-md focus:outline-none';
+      orbRingOuter.style.transform = 'scale(1.2)';
+      orbRingMid.style.transform = 'scale(1.15)';
+      orbCore.className = 'text-secondary/30 transition-colors duration-300';
+      centerIcon.textContent = 'mic';
+      centerIcon.className = 'material-symbols-outlined absolute text-[32px] text-secondary select-none pointer-events-none animate-pulse';
+      badgeText.textContent = 'Listening to your voice...';
+      dot.className = 'w-2.5 h-2.5 rounded-full bg-secondary animate-ping';
+      badge.className = 'relative z-10 mt-5 px-4 py-2 rounded-full bg-surface-container-high text-secondary font-label-md text-label-md flex items-center gap-2';
+      startListeningWave();
+    } else if (state === 'processing') {
+      document.getElementById('btnStateProcessing').className = 'state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-primary-container text-on-primary-container shadow-md focus:outline-none';
+      orbRingOuter.style.transform = 'scale(1.05)';
+      orbRingMid.style.transform = 'scale(1.0)';
+      orbCore.className = 'text-primary/40 transition-colors duration-300';
+      centerIcon.textContent = 'hourglass_top';
+      centerIcon.className = 'material-symbols-outlined absolute text-[32px] text-primary-container select-none pointer-events-none animate-spin';
+      badgeText.textContent = 'Synthesizing cane telemetry...';
+      dot.className = 'w-2.5 h-2.5 rounded-full bg-primary-container';
+      badge.className = 'relative z-10 mt-5 px-4 py-2 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-2';
+      resetBars(20);
+    } else if (state === 'speaking') {
+      document.getElementById('btnStateSpeaking').className = 'state-btn min-h-[56px] rounded-lg px-3 py-2 text-left font-label-md text-label-md font-bold transition-colors bg-primary-container text-on-primary-container shadow-md focus:outline-none';
+      orbRingOuter.style.transform = 'scale(1.3)';
+      orbRingMid.style.transform = 'scale(1.25)';
+      orbCore.className = 'text-primary-container/30 transition-colors duration-300';
+      centerIcon.textContent = 'graphic_eq';
+      centerIcon.className = 'material-symbols-outlined absolute text-[32px] text-primary select-none pointer-events-none';
+      badgeText.textContent = 'Assistant Speaking Feedback';
+      dot.className = 'w-2.5 h-2.5 rounded-full bg-primary-container';
+      badge.className = 'relative z-10 mt-5 px-4 py-2 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-2';
+      startSpeakingWave();
+    }
+  }
+
+  function resetBars(val) {
+    const lines = document.querySelectorAll('#waveBars line');
+    lines.forEach(line => {
+      line.setAttribute('y1', 80 - val);
+      line.setAttribute('y2', 80 + val);
+    });
+  }
+
+  function startListeningWave() {
+    const lines = document.querySelectorAll('#waveBars line');
+    waveAnimationInterval = setInterval(() => {
+      lines.forEach((line) => {
+        const rand = Math.floor(Math.random() * 24) + 6;
+        line.setAttribute('y1', 80 - rand);
+        line.setAttribute('y2', 80 + rand);
+      });
+    }, 120);
+  }
+
+  function startSpeakingWave() {
+    const lines = document.querySelectorAll('#waveBars line');
+    let tick = 0;
+    waveAnimationInterval = setInterval(() => {
+      tick++;
+      lines.forEach((line, i) => {
+        const offset = Math.sin(tick + i) * 22;
+        line.setAttribute('y1', 80 - Math.abs(offset) - 8);
+        line.setAttribute('y2', 80 + Math.abs(offset) + 8);
+      });
+    }, 90);
+  }
+
+  function insertPrompt(promptText) {
+    document.getElementById('userTranscriptText').textContent = '\u201C' + promptText + '\u201D';
+    setVoiceState('processing');
+    setTimeout(() => {
+      if (promptText.includes('battery')) {
+        document.getElementById('canevynSpokenText').textContent = '\u201CYour Canevyn smart stick is charged at 82%. Estimated 11 hours of active continuous obstacle scanning remaining.\u201D';
+      } else if (promptText.includes('obstacles')) {
+        document.getElementById('canevynSpokenText').textContent = '\u201CFront corridor clear for 3.4 meters. Low curb detected approximately 10 steps ahead.\u201D';
+      } else if (promptText.includes('Marcus')) {
+        document.getElementById('canevynSpokenText').textContent = '\u201CEncrypted geospatial beacon transmitted to Guardian Marcus. Confirmation acknowledged.\u201D';
+      } else {
+        document.getElementById('canevynSpokenText').textContent = '\u201CLocation pinpointed: Market & 4th Street. Cane telemetry stable and guidance audio standing by.\u201D';
+      }
+      setVoiceState('speaking');
+    }, 900);
+  }
+
+  function toggleFallbackDismiss() {
+    const el = document.getElementById('fallbackNotice');
+    if (el) {
+      el.style.display = 'none';
+    }
+  }
+
+  // Push to talk interaction simulation
+  const talkBtn = document.getElementById('primaryPushToTalk');
+  talkBtn.addEventListener('mousedown', () => setVoiceState('listening'));
+  talkBtn.addEventListener('mouseup', () => setVoiceState('processing'));
+  talkBtn.addEventListener('touchstart', (e) => {
+    e.preventDefault();
+    setVoiceState('listening');
+  });
+  talkBtn.addEventListener('touchend', (e) => {
+    e.preventDefault();
+    setVoiceState('processing');
+  });
+
+  document.getElementById('replaySpeechBtn').addEventListener('click', () => {
+    setVoiceState('speaking');
+  });
+
+  // Default start at speaking state
+  setVoiceState('speaking');
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-low/95 backdrop-blur-xl shadow-[0_-2px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container font-bold"><div class="h-20 flex items-center justify-around px-1 max-w-lg mx-auto"><a class="min-h-[56px] min-w-[56px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface focus:outline-none focus:text-primary-container" data-path="mobility-home" href="#"><span class="material-symbols-outlined text-[28px]">home</span><span class="font-label-md text-label-md">Home</span></a><a class="min-h-[56px] min-w-[56px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface focus:outline-none focus:text-primary-container" data-path="mobility-location" href="#"><span class="material-symbols-outlined text-[28px]">near_me</span><span class="font-label-md text-label-md">Location</span></a><div class="flex flex-col items-center -mt-5"><a aria-current="page" class="h-16 w-16 rounded-full bg-primary-container flex items-center justify-center shadow-[0_4px_16px_rgba(255,183,3,0.35)] focus:outline-none text-primary-container font-bold" data-path="mobility-voice-assistant" href="#"><svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[#08122d] fill-current" viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></a><span class="font-label-md text-label-md font-bold text-primary-container mt-1">Voice</span></div><a class="min-h-[56px] min-w-[56px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface focus:outline-none focus:text-primary-container" data-path="guardian-dashboard" href="#"><span class="material-symbols-outlined text-[28px]">shield_person</span><span class="font-label-md text-label-md">Guardian</span></a><a class="min-h-[56px] min-w-[56px] flex flex-col items-center justify-center gap-0.5 text-on-surface-variant hover:text-on-surface focus:outline-none focus:text-primary-container" data-path="system-settings" href="#"><span class="material-symbols-outlined text-[28px]">settings</span><span class="font-label-md text-label-md">Settings</span></a></div></nav>
+
+
+
+
+
+
+
+</body></html>
