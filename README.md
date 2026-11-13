@@ -1,8 +1,9 @@
+
 # Canevyn Smart Assistive Blind Stick System
 
 **Canevyn** is an assistive mobility hardware and software ecosystem designed to provide autonomous, dignified mobility for visually impaired individuals while keeping authorized guardians informed of real-time safety, location, and hardware telemetry.
 
----
+
 
 ## 1. System Invariants & Rules
 
@@ -16,7 +17,7 @@
 * **Accessibility First:** Atkinson Hyperlegible Next typography, WCAG AAA dark contrast, 56px–72px minimum touch targets, tactile borders, Web Speech API (STT & TTS), and haptic vibrations.
 * **Strict Privacy & Security:** Argon2id password hashing, environment-driven JWT secret management, token expiration enforcement, device ownership verification, and scoped telemetry/SOS channels with zero global leakage.
 
----
+
 
 ## 2. Environment Architecture: Development Web vs Production Mobile
 
@@ -107,7 +108,6 @@ Canevyn/
 └── README.md
 ```
 
----
 
 ## 4. Quickstart & Execution
 
@@ -135,7 +135,6 @@ Ran 10 tests in 2.0s
 OK
 ```
 
----
 
 ## 5. Preloaded Demo Accounts
 
@@ -149,7 +148,7 @@ The database is automatically preloaded with canonical seed profiles matching th
 
 *(Quick-fill buttons are provided on the Sign In screen for instant testing).*
 
----
+
 
 ## 6. Testing the Hardware SOS Emergency Flow
 
@@ -162,3 +161,7 @@ The database is automatically preloaded with canonical seed profiles matching th
    * **Window 2 (Guardian):** Instantly receives the scoped real-time WebSocket broadcast and opens the **Hardware SOS Alert Received Screen** ("Physical Canevyn SOS Switch Activated - Initiated by Arthur Vance via physical emergency cane latch") with impact coordinates and neutral **"Call Emergency Services"** action.
 4. **Resolution:**
    * In Window 1, hold the **"Resolve Hardware Alert"** button for 3 seconds (or click "Reset Physical Latch" in the simulator bar). Both screens immediately clear and return to nominal safety state.
+
+# Canevyn
+Connected Assistive Navigation &amp; Emergency Vision for Your Needs !!
+
